@@ -1,0 +1,30 @@
+<resources>
+
+	<string name="app_name">Calculator</string>
+
+	<!-- Calculator buttons -->
+	<string name="cancel_button">C</string>
+	<string name="divide_button">/</string>
+	<string name="multiply_button">*</string>
+	<string name="delete_button">&lt;-</string>
+	<string name="minus_button">-</string>
+	<string name="plus_button">+</string>
+	<string name="open_bracket_button">(</string>
+	<string name="close_bracket_button">)</string>
+	<string name="point_button">.</string>
+	<string name="cursor_left">&lt;</string>
+	<string name="cursor_right">&gt;</string>
+
+	<!-- Number buttons -->
+	<string name="number_0_button">0</string>
+	<string name="number_1_button">1</string>
+	<string name="number_2_button">2</string>
+	<string name="number_3_button">3</string>
+	<string name="number_4_button">4</string>
+	<string name="number_5_button">5</string>
+	<string name="number_6_button">6</string>
+	<string name="number_7_button">7</string>
+	<string name="number_8_button">8</string>
+	<string name="number_9_button">9</string>
+
+</resources>

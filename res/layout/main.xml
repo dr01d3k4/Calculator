@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/operator_button_states"
+		android:baselineAligned="false"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/transparent"
+			android:orientation="horizontal"
+			android:weightSum="6" >
+
+			<TextView
+				android:id="@+id/tvCalculationDisplay"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="5"
+				android:background="@color/transparent"
+				android:gravity="left|center"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/number_0_button"
+				android:textSize="@dimen/calculation_text_size" />
+
+			<Button
+				android:id="@+id/btCancelButton"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:background="@drawable/operator_button_states"
+				android:gravity="center|center"
+				android:onClick="onClearClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/cancel_button"
+				android:textSize="@dimen/operator_button_text_size" />
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/tvAnswerDisplay"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin"
+			android:background="@color/transparent"
+			android:gravity="right|center"
+			android:padding="@dimen/button_padding_2"
+			android:text="@string/number_0_button"
+			android:textSize="@dimen/answer_text_size" />
+	</LinearLayout>
+
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:weightSum="5" >
+
+		<TableRow
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:weightSum="4" >
+
+			<Button
+				android:id="@+id/btOpenBracketButton"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/operator_button_states"
+				android:gravity="center|center"
+				android:onClick="onOperatorClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/open_bracket_button"
+				android:textSize="@dimen/operator_button_text_size" />
+
+			<Button
+				android:id="@+id/btCloseBracketButton"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/operator_button_states"
+				android:gravity="center|center"
+				android:onClick="onOperatorClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/close_bracket_button"
+				android:textSize="@dimen/operator_button_text_size" />
+
+			<Button
+				android:id="@+id/btDivideButton"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/operator_button_states"
+				android:gravity="center|center"
+				android:onClick="onOperatorClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/divide_button"
+				android:textSize="@dimen/operator_button_text_size" />
+
+			<Button
+				android:id="@+id/btDeleteButton"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/delete_button_states"
+				android:gravity="center|center"
+				android:onClick="onDeleteClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/delete_button"
+				android:textSize="@dimen/operator_button_text_size" />
+		</TableRow>
+
+		<TableRow
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:weightSum="4" >
+
+			<Button
+				android:id="@+id/btNumber7Button"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/number_button_states"
+				android:gravity="center|center"
+				android:onClick="onNumberClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/number_7_button"
+				android:textSize="@dimen/number_button_text_size" />
+
+			<Button
+				android:id="@+id/btNumber8Button"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/number_button_states"
+				android:gravity="center|center"
+				android:onClick="onNumberClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/number_8_button"
+				android:textSize="@dimen/number_button_text_size" />
+
+			<Button
+				android:id="@+id/btNumber9Button"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/number_button_states"
+				android:gravity="center|center"
+				android:onClick="onNumberClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/number_9_button"
+				android:textSize="@dimen/number_button_text_size" />
+
+			<Button
+				android:id="@+id/btMultiplyButton"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/operator_button_states"
+				android:gravity="center|center"
+				android:onClick="onOperatorClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/multiply_button"
+				android:textSize="@dimen/operator_button_text_size" />
+		</TableRow>
+
+		<TableRow
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:weightSum="4" >
+
+			<Button
+				android:id="@+id/btNumber4Button"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/number_button_states"
+				android:gravity="center|center"
+				android:onClick="onNumberClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/number_4_button"
+				android:textSize="@dimen/number_button_text_size" />
+
+			<Button
+				android:id="@+id/btNumber5Button"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/number_button_states"
+				android:gravity="center|center"
+				android:onClick="onNumberClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/number_5_button"
+				android:textSize="@dimen/number_button_text_size" />
+
+			<Button
+				android:id="@+id/btNumber6Button"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/number_button_states"
+				android:gravity="center|center"
+				android:onClick="onNumberClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/number_6_button"
+				android:textSize="@dimen/number_button_text_size" />
+
+			<Button
+				android:id="@+id/btMinusButton"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/operator_button_states"
+				android:gravity="center|center"
+				android:onClick="onOperatorClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/minus_button"
+				android:textSize="@dimen/operator_button_text_size" />
+		</TableRow>
+
+		<TableRow
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:weightSum="4" >
+
+			<Button
+				android:id="@+id/btNumber1Button"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/number_button_states"
+				android:gravity="center|center"
+				android:onClick="onNumberClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/number_1_button"
+				android:textSize="@dimen/number_button_text_size" />
+
+			<Button
+				android:id="@+id/btNumber2Button"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/number_button_states"
+				android:gravity="center|center"
+				android:onClick="onNumberClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/number_2_button"
+				android:textSize="@dimen/number_button_text_size" />
+
+			<Button
+				android:id="@+id/btNumber3Button"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/number_button_states"
+				android:gravity="center|center"
+				android:onClick="onNumberClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/number_3_button"
+				android:textSize="@dimen/number_button_text_size" />
+
+			<Button
+				android:id="@+id/btPlusButton"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/operator_button_states"
+				android:gravity="center|center"
+				android:onClick="onOperatorClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/plus_button"
+				android:textSize="@dimen/operator_button_text_size" />
+		</TableRow>
+
+		<TableRow
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:weightSum="4" >
+
+			<Button
+				android:id="@+id/btNumber0Button"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/number_button_states"
+				android:gravity="center|center"
+				android:onClick="onNumberClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/number_0_button"
+				android:textSize="@dimen/number_button_text_size" />
+
+			<Button
+				android:id="@+id/btPointButton"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/number_button_states"
+				android:gravity="center|center"
+				android:onClick="onOperatorClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/point_button"
+				android:textSize="@dimen/number_button_text_size" />
+
+			<Button
+				android:id="@+id/btCursorLeft"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/cursor_button_states"
+				android:gravity="center|center"
+				android:onClick="onCursorClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/cursor_left"
+				android:textSize="40sp"
+				android:textStyle="bold" />
+
+			<Button
+				android:id="@+id/btCursorRight"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_margin="@dimen/margin"
+				android:layout_weight="1"
+				android:background="@drawable/cursor_button_states"
+				android:gravity="center|center"
+				android:onClick="onCursorClick"
+				android:padding="@dimen/button_padding_2"
+				android:text="@string/cursor_right"
+				android:textSize="40sp"
+				android:textStyle="bold" />
+		</TableRow>
+	</TableLayout>
+
+</LinearLayout>

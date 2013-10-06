@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<dimen name="button_padding">4dp</dimen>
+	<dimen name="button_border_radius">2dp</dimen>
+	<dimen name="button_corner_radius">6dp</dimen>
+	<dimen name="button_padding_2">6dp</dimen>
+	<dimen name="margin">2dp</dimen>
+	<!-- Button sizes -->
+	<dimen name="number_button_text_size">25sp</dimen>
+	<dimen name="operator_button_text_size">25sp</dimen>
+
+	<!-- Top sizes -->
+	<dimen name="calculation_text_size">30sp</dimen>
+	<dimen name="answer_text_size">28sp</dimen>
+
+</resources>

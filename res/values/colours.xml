@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="black">#ff000000</color>
+	<color name="button_border">#ff000000</color>
+	<color name="dark_grey">#ff3d3d3d</color>
+	<color name="light_grey">#606060</color>
+	<color name="button_pressed">#ff2fa1cb</color>
+	<color name="transparent">#00000000</color>
+	<color name="cursor_button">#ffA13000</color>
+	<color name="delete_button">#ffA20000</color>
+
+</resources>
