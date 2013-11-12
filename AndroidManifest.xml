@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.dr01d3k4.calculator"
 	android:versionCode="1"
@@ -15,7 +16,7 @@
 
 		<!-- Main -->
 		<activity
-			android:name=".Main"
+			android:name="com.dr01d3k4.calculator.Main"
 			android:label="@string/app_name" >
 			<intent-filter>
 				<action

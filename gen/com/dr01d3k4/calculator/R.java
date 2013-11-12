@@ -21,6 +21,14 @@ public final class R {
         public static final int transparent=0x7f040005;
     }
     public static final class dimen {
+        /**  Default screen margins, per the Android Design guidelines. 
+
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+	
+         */
+        public static final int activity_horizontal_margin=0x7f050009;
+        public static final int activity_vertical_margin=0x7f05000a;
         public static final int answer_text_size=0x7f050008;
         public static final int button_border_radius=0x7f050001;
         public static final int button_corner_radius=0x7f050002;
@@ -73,9 +81,11 @@ public final class R {
         public static final int tvCalculationDisplay=0x7f080000;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int activity_searching=0x7f030000;
+        public static final int main=0x7f030001;
     }
     public static final class string {
+        public static final int action_settings=0x7f060017;
         public static final int app_name=0x7f060000;
         /**  Calculator buttons 
          */
@@ -85,6 +95,7 @@ public final class R {
         public static final int cursor_right=0x7f06000b;
         public static final int delete_button=0x7f060004;
         public static final int divide_button=0x7f060002;
+        public static final int hello_world=0x7f060018;
         public static final int minus_button=0x7f060005;
         public static final int multiply_button=0x7f060003;
         /**  Number buttons 
@@ -102,6 +113,7 @@ public final class R {
         public static final int open_bracket_button=0x7f060007;
         public static final int plus_button=0x7f060006;
         public static final int point_button=0x7f060009;
+        public static final int title_activity_searching=0x7f060016;
     }
     public static final class style {
         /** 
